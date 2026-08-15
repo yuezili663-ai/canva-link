@@ -3,23 +3,135 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>正在開啟...</title>
+
+  <title>小說世界</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f7f3ef;
+      color: #3d3530;
+      font-family:
+        "Noto Serif TC",
+        "PingFang TC",
+        "Microsoft JhengHei",
+        serif;
+    }
+
+    header {
+      background: #5a4636;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      margin: 0 0 12px;
+      font-size: 32px;
+      letter-spacing: 4px;
+    }
+
+    header p {
+      margin: 0;
+      opacity: 0.85;
+      font-size: 15px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .novel {
+      background: white;
+      margin-bottom: 25px;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .novel h2 {
+      margin-top: 0;
+      color: #5a4636;
+      font-size: 24px;
+    }
+
+    .novel p {
+      line-height: 1.9;
+      color: #6b625c;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 25px;
+      background: #8b6b52;
+      color: white;
+      text-decoration: none;
+      border-radius: 25px;
+    }
+
+    .button:hover {
+      background: #6f533f;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      color: #999;
+      font-size: 13px;
+    }
+  </style>
 </head>
 
 <body>
 
-<script>
-  const canvaUrl = "https://strawberryblstory.my.canva.site/";
-  const shopeeUrl = "https://s.shopee.tw/3qMKlGokfm";
+<header>
+  <h1>小說世界</h1>
+  <p>在文字裡，遇見另一個世界</p>
+</header>
 
-  // 開一個 Canva 分頁
-  window.open(canvaUrl, "_blank");
+<div class="container">
 
-  // 本頁直接變成 Shopee
-  window.location.replace(shopeeUrl);
-</script>
+  <!-- 小說 1 -->
+  <div class="novel">
+    <h2>《重生後，我不愛那個渣攻了》</h2>
 
-<p>正在開啟...</p>
+    <p>
+      重生之後，曾經執著的人與事，
+      是否還值得再次回頭？
+    </p>
+
+    <a class="button" href="novel1/">
+      閱讀小說
+    </a>
+  </div>
+
+
+  <!-- 小說 2 -->
+  <div class="novel">
+    <h2>《夜行禁忌》</h2>
+
+    <p>
+      夜幕降臨之後，
+      有些禁忌，絕對不能觸碰……
+    </p>
+
+    <a class="button" href="novel2/">
+      閱讀小說
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 小說世界
+</footer>
 
 </body>
 </html>
