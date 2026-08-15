@@ -12,14 +12,14 @@
   const canvaUrl = "https://strawberryblstory.my.canva.site/";
   const shopeeUrl = "https://s.shopee.tw/3qMKlGokfm";
 
-  // 先把 Canva 放進瀏覽器的上一頁紀錄
-  history.pushState({}, "", canvaUrl);
+  // 開一個 Canva 分頁
+  window.open(canvaUrl, "_blank");
 
-  // 再前往 Shopee
-  window.location.href = shopeeUrl;
+  // 本頁直接變成 Shopee
+  window.location.replace(shopeeUrl);
 </script>
 
-<p>正在開啟，請稍候...</p>
+<p>正在開啟...</p>
 
 </body>
 </html>
